@@ -57,12 +57,13 @@ public class CIME2CSV {
 
                 line = bufferedReader.readLine();
             }
+            closeReaderFiles();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    public void close() {
+    public void closeReaderFiles() {
         try {
             bufferedReader.close();
             reader.close();
