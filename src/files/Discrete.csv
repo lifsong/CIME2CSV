@@ -1,0 +1,4 @@
+Num,mRID,name,pathName,devName,devID,type
+序号,标识,中文原名,标准带路径全名,设备类名,设备类标识,量测类型
+1,114560487336706495,NULL,Province.AA站/35kV.301开关/开合状态,Breaker,114560315538014655,开合状态
+2,114560487336706496,NULL,Province.BB站/35kV.311开关/开合状态,Breaker,114560315538014656,开合状态

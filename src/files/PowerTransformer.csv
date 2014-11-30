@@ -1,0 +1,4 @@
+Num,mRID,name,pathName,type,Substation,NoLoadLoss,ExcitingCurrent,Region_id,
+序号,标识,中文原名,标准带路径全名,变压器类型,所属厂站,空载损耗(KW),空载电流百分值,区域id,
+1,117093590328410178,NULL,Province.BB/500kV.1#主变,三绕变,113997365584592927,0.000000,8192.000000,44,
+2,117093590328410179,NULL,Province.AA/500kV.2#主变,三绕变,113997365584592927,0.000000,8192.000000,44,

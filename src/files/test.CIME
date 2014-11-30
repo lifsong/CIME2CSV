@@ -1,0 +1,118 @@
+<!Entity=Province type=电网模型 time='2014-11-19_16:07:13' !>
+<ACLineDot::Province>
+@Num  mRID name  pathName  ACLineSegment  Substation  I_node  BaseVoltage  VoltageLevel  Bay  P  Q  I  Region_id  
+//序号  标识  中文原名  标准带路径全名  交流线段标识  厂站标识  物理连接节点  基准电压标识  电压等级标识  所属间隔标识  有功量测  无功量测  电流量测  区域id  
+#  1  116812115351699552  NULL  Province.BB站/500kV.盘龙II线  116530641096409632  113997365584592936  1000040002037  112871465677750274  113152940654461022  0  -66.891617  -294.855194  328.056152  44  
+</ACLineDot::Province>
+<ACLineSegment::Province>
+@Num  mRID name  pathName  StartSt  EndSt  ratedMW  ratedCurrent  BaseVoltage  r  x  bch  r0  x0  b0ch  Region_id  
+//序号  标识  中文原名  标准带路径全名  首端厂站标识  末端厂站标识  功率限制  允许载流量  所属基准电压  正序电阻有名值  正序电抗有名值  正序电纳有名值  零序电阻有名值  零序电抗有名值  零序电纳有名值  区域id  
+#  1  116530641096409089  NULL  Province.BB线  113997366306013227  113997366306013198  0.000000  1200.000000  112871465677750279  2.410600  15.518300  200.884003  0.000000  0.000000  0.000000  44  
+</ACLineSegment::Province>
+<Analog::Province>
+@Num  mRID name  pathName  devName  devID  type
+//序号  标识  中文原名  标准带路径全名  设备类名  设备类标识  量测类型
+#  1  114560530286380287  NULL  Province.AA站/220kV.215开关/有功值  Breaker  114560315538015487  有功
+</Analog::Province>
+<BaseVoltage::Province>
+@Num  mRID name  nomkV  Region_id  
+//序号  标识  基准电压名  基准电压  区域id  
+#  1  112871465677750279  220kV  230.000000  1  
+#  2  112871465677750280  110kV  115.000000  1  
+</BaseVoltage::Province>
+<Bay::Province>
+@Num  mRID name  pathName  Substation  VoltageLevel  BaseVoltage  type  Region_id  
+//序号  标识  名称  标准带路径全名  所属厂站  所属电压等级  所属电压类型  结线类型  区域id  
+#  1  114278840561303735  NULL  Province.AA站/500kV.501间隔  113997365584592927  113152940654460987  112871465677750274  0  44  
+#  2  114278840561303736  NULL  Province.BB站/500kV.502间隔  113997365584592927  113152940654460987  112871465677750274  0  44  
+</Bay::Province>
+<Breaker::Province>
+@Num  mRID name  pathName  type  I_node  J_node  Substation  BaseVoltage  VoltageLevel  Bay  status  mvarating  Region_id  
+//序号  标识  名称  标准带路径全名  断路器类型  物理连接节点号  物理连接节点号  所属厂站  所属电压类型  所属电压等级  所属间隔标识  状态  遮断容量  区域id  
+#  1  114560315538014655  NULL  Province.AA站/35kV.301开关  普通开关  1000031003006  1000031003092  113997365584592927  112871465677750275  113152940654460988  114278841282725244  0  40.000000  44  
+#  2  114560315538014656  NULL  Province.BB站/35kV.311开关  普通开关  1000031003094  1000031003037  113997365584592927  112871465677750275  113152940654460988  114278841282725246  0  40.000000  44  
+</Breaker::Province>
+<BusbarSection::Province>
+@Num  mRID name  pathName  I_node  Substation  BaseVoltage  VoltageLevel  Location  Bay  vmax  vmin  V  A  Region_id  
+//序号  标识  中文原名  标准带路径全名  物理连接节点号  所属厂站  基准电压标识  所属电压等级  位置信息  所属间隔标识  电压上限  电压下限  电压量测  相角量测  区域id  
+#  1  115404740468146265  Province.AA500kV1母线  Province.万县站/500kV.Ⅰ母  1000031002005  113997365584592927  112871465677750274  113152940654460987  NULL  0  535.000000  520.000000  523.850891  0.000000  44  
+#  2  115404740468146266  NULL  Province.BB站/500kV.Ⅱ母  1000031002004  113997365584592927  112871465677750274  113152940654460987  NULL  0  535.000000  520.000000  523.850891  0.000000  44  
+</BusbarSection::Province>
+<Disconnector::Province>
+@Num  mRID name  pathName  I_node  J_node  Substation  BaseVoltage  VoltageLevel  Bay  status  Region_id  
+//序号  标识  名称  标准带路径全名  物理连接节点号  物理连接节点号  所属厂站  所属电压类型  所属电压等级  所属间隔标识  刀闸状态  区域id  
+#  1  114841790514725669  NULL  Province.AA站/35kV.3111刀闸  1000031003094  1000031003006  113997365584592927  112871465677750275  113152940654460988  114278841282725246  0  44  
+#  2  114841790514725670  NULL  Province.BB站/35kV.3121刀闸  1000031003096  1000031003006  113997365584592927  112871465677750275  113152940654460988  114278841282725247  0  44  
+</Disconnector::Province>
+<Discrete::Province>
+@Num  mRID name  pathName  devName  devID  type
+//序号  标识  中文原名  标准带路径全名  设备类名  设备类标识  量测类型
+#  1  114560487336706495  NULL  Province.AA站/35kV.301开关/开合状态  Breaker  114560315538014655  开合状态
+#  2  114560487336706496  NULL  Province.BB站/35kV.311开关/开合状态  Breaker  114560315538014656  开合状态
+</Discrete::Province>
+<Load::Province>
+@Num  mRID name  pathName  Substation  I_node  BaseVoltage  VoltageLevel  Bay  P  Q  Region_id  
+//序号  标识  中文原名  标准带路径全名  所属厂站标识  物理连接节点号  基准电压标识  所属电压等级  所属间隔标识  有功  无功  区域id  
+#  1  115967691142988097  NULL  Province.AA沟/10kV.1#主变10KV侧负荷  113997366306013195  44000011006005  112871465677750278  113152941375881348  0  0.000000  0.000000  44  
+#  2  115967691142988098  NULL  Province.BB沟/10kV.2#主变10KV侧负荷  113997366306013195  44000011006006  112871465677750278  113152941375881348  0  0.000000  0.000000  44  
+</Load::Province>
+<GroundDisconnector::Province>
+@Num  mRID name  pathName  type  I_node  Substation  BaseVoltage  VoltageLevel  Bay  status  Region_id  
+//序号  标识  名称  带路径标准全名  地刀类型  节点1  所属厂站  所属电压类型  所属电压等级  所属间隔标识  接地刀闸状态  区域id  
+#  1  115123266212855893  NULL  Province.AA站/500kV.501117地刀  0  44000056002062  113997366306013240  112871465677750274  113152941375881295  114278841282724985  0  44  
+#  2  115123266212855894  NULL  Province.BB站/500kV.501127地刀  0  44000056002061  113997366306013240  112871465677750274  113152941375881295  114278841282724985  0  44  
+</GroundDisconnector::Province>
+<PowerTransformer::Province>
+@Num  mRID name  pathName  type  Substation  NoLoadLoss  ExcitingCurrent  Region_id  
+//序号  标识  中文原名  标准带路径全名  变压器类型  所属厂站  空载损耗(KW)  空载电流百分值  区域id  
+#  1  117093590328410178  NULL  Province.BB/500kV.1#主变  三绕变  113997365584592927  0.000000  8192.000000  44  
+#  2  117093590328410179  NULL  Province.AA/500kV.2#主变  三绕变  113997365584592927  0.000000  8192.000000  44  
+</PowerTransformer::Province>
+<SeriesCompensator::Province>
+@Num  mRID name  pathName  r  x  I_node  J_node  BaseVoltage  VoltageLevel  Bay  Substation  Pi  Qi  Pj  Qj  Region_id  
+//序号  标识  中文名称  带路径标准全名  电阻  电抗  首端连接点号  末端连接点号  所属电压类型  电压等级  所属间隔标识  所属厂站  I侧有功  I侧无功  J侧有功  J侧无功  区域id  
+#  1  118219490956673025  NULL  Province.AA/10kV.1#电抗器  0.000000  -0.010000  44000044006074  44000044006075  112871465677750278  113152941375881394  0  113997366306013228  0.000000  0.000000  0.000000  0.000000  44  
+#  2  118219490956673026  NULL  Province.BB/10kV.2#电抗器  0.000000  -0.010000  44000044006043  44000044006100  112871465677750278 
+</SeriesCompensator::Province>
+<ShuntCompensator::Province>
+@Num  mRID name  pathName  nomQ  V_rate  I_node  BaseVoltage  VoltageLevel  Bay  Substation  Q  Region_id  
+//序号  标识  中文原名  标准带路径全名  额定容量  额定电压  物理连接节点  所属电压类型  所属电压等级  所属间隔标识  厂站标识  无功量测  区域id  
+#  1  117938015258542349  NULL  Province.AA站/35kV.#1-1电抗器311  -45.000000  35.000000  1000031003037  112871465677750275  113152940654460988  0  113997365584592927  0.000000  44  
+#  2  117938015258542350  NULL  Province.BB站/35kV.#1-2电抗器312  -45.000000  35.000000  1000031003038  112871465677750275  113152940654460988  0  113997365584592927  0.000000  44  
+</ShuntCompensator::Province>
+<ControlArea::Province>
+@Num  mRID name  Parent  p  q  Region_id  
+//序号  标识  本区域名  父区域名  总有功  总无功  区域id  
+#  1  113715890607882255  State  NULL  0.000000  0.000000  1  
+#  2  113715891262193665  Middle  113715890607882255  0.000000  0.000000  40  
+</ControlArea::Province>
+<Substation::Province>
+@Num  mRID name  pathName  type  ControlArea  Region_id  P  Q  x  y  i_flag  mGdis_flag  mUnXf_flag
+//序号  标识  名称  标准带路径厂站全名  厂站类型  所属区域  区域id  总有功  总无功  厂站精度  厂站纬度  电流量测标识  地刀量测标识  机组量测标识
+#  1  113997365584592927  NULL  Province.AA站  变电站  113715891329302529  44  NULL  NULL  NULL  NULL  NULL  NULL  NULL
+#  2  113997365584592936  NULL  Province.BB站  变电站  113715891329302529  44  NULL  NULL  NULL  NULL  NULL  NULL  NULL
+</Substation::Province>
+<SynchronousMachine::Province>
+@Num  mRID name  pathName  type  I_node  Substation  BaseVoltage  VoltageLevel  RatedMW  maxU  minU  maxQ  minQ  maxP  minP  r  x  r0  x0  AuxRatio  P  Q  V  Region_id  
+//序号  标识  中文原名  标准带路径全名  发电机类型  物理连接节点号  所属厂站  所属电压类型  所属电压等级  额定容量  电压上限  电压下限  机组无功上限  机组无功下限  机组有功上限  机组有功下限  正序电阻  正序电抗  零序电阻  零序电抗  厂用电率  有功  无功  机端电压  区域id  
+#  1  115686216166277121  NULL  Province.AA电厂/24kV.1#机  火电  44000020043010  113997366306013204  112871465677750315  113152941375881240  360.000000  0.000000  0.000000  223.106995  -150.000000  360.000000  216.000000  0.000000  0.000000  0.000000  0.000000  8.000000  222.014313  22.609051  24.402449  44  
+#  2  115686216166277122  NULL  Province.BB厂/24kV.2#机  火电  44000020043011  113997366306013204  112871465677750315  113152941375881240  360.000000  24.000000  0.000000  223.106995  -150.000000  360.000000  216.000000  0.000000  0.000000  0.000000  0.000000  8.000000  203.914856  30.763535  24.467327  44  
+</SynchronousMachine::Province>
+<TapChangerType::Province>
+@Num  mRID name  neutralStep  neutralKV  highStep  lowStep  stepVolIncre  
+//序号  标识  名称  额定档位  中点电压  最高档位  最低档位  步长  
+#  1  117656540265054209  B-2+22.5%  3  -0.025000  5  1  0.025000  
+#  2  117656540265054210  B-8+81.25%  9  -0.012500  17  1  0.012500  
+</TapChangerType::Province>
+<TransformerWinding::Province>
+@Num  mRID name  pathName  WindingType  Substation  PowerTransformer  I_node  BaseVoltage  VoltageLevel  Bay  TapChangerType  ratedMVA  ratedkV  loadLoss  leakageImpedence  x  r  x0  r0  P  Q  D  Region_id  
+//序号  标识  中文原名  标准带路径全名  绕组类型  厂站标识  所属变压器  物理连接节点  所属基准电压  所属电压等级  所属间隔标识  分接头类型标识  额定功率  额定电压  短路损耗  短路电压百分值  正序电抗有名值  正序电阻有名值  零序电抗  零序电阻  有功量测  无功量测  档位量测  区域id  
+#  1  117375065305120913  NULL  Province.AA站/500kV.1#主变-高  高  113997365584592927  117093590328410178  1000031002071  112871465677750274  113152940654460987  0  NULL  750.000000  525.000000  0.000000  0.000000  51.927700  0.257200  0.000000  0.000000  240.459518  100.380127  0.000000  44  
+#  2  117375065305120914  NULL  Province.BB站/500kV.1#主变-中  中  113997365584592927  117093590328410178  1000031007019  112871465677750279  113152940654461001  0  117656540265054209  750.000000  230.000000  0.000000  0.000000  -7.827700  0.189700  0.000000  0.000000  -240.188980  -42.370213  2.000000  44  
+</TransformerWinding::Province>
+<VoltageLevel::Province>
+@Num  mRID name  pathName  highkV  lowkV  Substation  BaseVoltage  Region_id  type
+//序号  标识  中文原名  标准带路径全名  电压上限  电压下限  所属厂站  所属基准电压  区域id  接线类型
+#  1  113152940654460987  NULL  Province.AA站/500kV  0.000000  0.000000  113997365584592927  112871465677750274  44  NULL
+#  2  113152940654460988  NULL  Province.BB站/35kV  0.000000  0.000000  113997365584592927  112871465677750275  44  NULL
+</VoltageLevel::Province>

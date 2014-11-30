@@ -1,0 +1,4 @@
+Num,mRID,name,pathName,type,ControlArea,Region_id,P,Q,x,y,i_flag,mGdis_flag,mUnXf_flag
+序号,标识,名称,标准带路径厂站全名,厂站类型,所属区域,区域id,总有功,总无功,厂站精度,厂站纬度,电流量测标识,地刀量测标识,机组量测标识
+1,113997365584592927,NULL,Province.AA站,变电站,113715891329302529,44,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+2,113997365584592936,NULL,Province.BB站,变电站,113715891329302529,44,NULL,NULL,NULL,NULL,NULL,NULL,NULL

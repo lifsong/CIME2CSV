@@ -1,0 +1,3 @@
+Num,mRID,name,pathName,devName,devID,type
+序号,标识,中文原名,标准带路径全名,设备类名,设备类标识,量测类型
+1,114560530286380287,NULL,Province.AA站/220kV.215开关/有功值,Breaker,114560315538015487,有功
