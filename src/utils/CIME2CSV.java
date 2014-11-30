@@ -35,7 +35,7 @@ public class CIME2CSV {
 
         try {
             String line = bufferedReader.readLine();
-            String className = "UNKOWN_CLASS";
+            String className = "UNKNOWN_CLASS";
             boolean isInClass = false;
             while (line != null) {
                 if (isClassStartLine(line)) {
